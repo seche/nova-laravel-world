@@ -1,0 +1,36 @@
+{
+    "name": "seche/nova-laravel-world",
+    "description": "A Laravel Nova tool for the laravel-world package.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "world",
+        "cities",
+        "countries",
+        "continents",
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "~3.0",
+        "khsing/world": "^8.1",
+        "titasgailius/search-relations": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seche\\NovaLaravelWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seche\\NovaLaravelWorld\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
