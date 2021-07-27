@@ -7,7 +7,7 @@
         "world",
         "cities",
         "countries",
-        "continents",
+        "continents"
     ],
     "license": "MIT",
     "require": {
