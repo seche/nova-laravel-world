@@ -21,3 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Nothing
+
+## [1.0.1] - 2021-07-29
+### Bug Fixes
+- Country: fixed typo on callingcode column name.
+- CityLocale: Added check for empty Division Name in the display function as it was giving errors when it was null. 
