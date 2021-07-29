@@ -109,7 +109,7 @@ class Country extends Resource
                 ->hideFromIndex()
                 ->nullable()
                 ->rules( 'max:8'),
-            Text::make(__('Calling Prefix'), 'Callingcode')
+            Text::make(__('Calling Prefix'), 'callingcode')
                 ->sortable()
                 ->nullable()
                 ->hideFromIndex()

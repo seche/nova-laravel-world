@@ -73,7 +73,7 @@ class CityLocale extends Resource
                     return $request->isUpdateOrUpdateAttachedRequest();
                 })
                 ->display(function($someModel){
-                    if ($someModel->country->has_division)
+                    if ($someModel->country->has_division && !empty($someModel->division->name))
                         return $someModel->name.',  ' .  $someModel->division->name . ', '. $someModel->country->name;
                     else
                         return $someModel->name.',  ' .  $someModel->country->name;
